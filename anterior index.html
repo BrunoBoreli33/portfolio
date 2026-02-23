@@ -983,7 +983,7 @@
 
         .email-icon { width: 24px; height: 24px; flex-shrink: 0; object-fit: contain; transition: transform 0.3s ease; }
         .email-copy-container:hover .email-icon { transform: scale(1.1) rotate(5deg); }
-        .email-text { color: var(--primary-green); font-weight: 600; font-size: 0.85rem; transition: color 0.3s ease; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .email-text { color: var(--primary-green); font-weight: 600; font-size: 1.1rem; transition: color 0.3s ease; word-break: break-word}
         .email-copy-container:hover .email-text { color: var(--light-green); }
 
         .copy-email-btn {
@@ -1130,6 +1130,7 @@
         }
 
         @media (max-width: 600px) {
+            .lang-text { display: none; }
             .ctrl-btn .flag { font-size: 1.1rem; }
             .ctrl-btn { padding: 0.45rem 0.65rem; }
         }
